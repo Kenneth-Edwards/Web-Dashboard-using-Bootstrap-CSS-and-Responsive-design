@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+/*@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css?family=Milonga&display=swap');*/
+@import url('https://fonts.googleapis.com/css?family=Metal+Mania|Milonga&display=swap');
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+.imgborder {
+    padding:1px;
+    border:2px solid #060314;
+    background-color:rgb(33, 236, 15);
+ }
+
+
+
+.row div {
+    border: 1px solid rgb(225, 224, 250);
+}
+
+
+.italic_font {
+    font-style: italic;
+    color: rgb(243, 8, 8);
+  }
+
+.text1 {
+    color: rgb(240, 150, 33);
+}
+
+body {
+    background-color: rgba(241, 241, 241, 0.774);
+  }
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 1.5em
+}
+
+img { 
+    max-width:100%; 
+    height: auto;   
+}
+
+.about_image1 {
+    clear: both;
+    float: left;
+    height: 350px;
+    width: auto;
+    margin: 15px 30px 10px 10px;
+    border-radius: 5%;
+}
+ 
+.about_image2 {
+    clear: both;
+    text-align: center;
+    width: 45%;
+    height: auto;
+    margin: 15px 15px 5px 5px;
+    border-radius: 5%;
+}
+
+.about_image3 {
+    clear: both;
+    text-align: center;
+    max-width: 400px;
+    height: auto;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5%;
+}
+
+ 
+/* ================================== */
+.footfont {
+    font-family: "Metal Mania";
+    font-size: 2em;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+}
+
+.footfont2 {
+    font-family: "Metal Mania";
+    font-size: 2em;
+    font-weight: normal;
+    color: #333;
+    text-align: left;
+}
+
+.main_footer {
+    background-color: #a8d4f3;
+    color: white;
+    padding: .15em .15em;
+    margin: 60px 10px 10px 10px;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+.footer-nav li {
+    padding: .15em .15em
+}
+.footer-nav img {
+    widows: 150px;
+}
+
+@media (max-width: 600px) {
+    .image_reduce {
+        width: 35%;
+        height: auto;
+        transform: rotate(10);
+        transition-duration: 10s;
+    }
+}
+
+
+.navcolor1 {
+    background-color:#a8d4f3;
+}
+
+/* .nav-bar {
+    @media only screen and (max-width: 420px) {background:#fff;}
+} */
+    
+
+@media (max-width: 480px) {
+    .navbar {
+       background-color: rgb(255, 245, 229) !important;
+       }
+   }
+
+
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "City_id"; }
+	td:nth-of-type(2):before { content: "City"; }
+	td:nth-of-type(3):before { content: "Cloudiness"; }
+	td:nth-of-type(4):before { content: "Country"; }
+	td:nth-of-type(5):before { content: "Date"; }
+	td:nth-of-type(6):before { content: "Humidity"; }
+	td:nth-of-type(7):before { content: "Lat"; }
+	td:nth-of-type(8):before { content: "Lng"; }
+	td:nth-of-type(9):before { content: "Max Temp"; }
+	td:nth-of-type(10):before { content: "Wind Speed"; }
+}

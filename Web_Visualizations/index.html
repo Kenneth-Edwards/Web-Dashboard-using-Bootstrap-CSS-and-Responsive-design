@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="reset.css">
+        <!-- Bootstrap CDN -->
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="maincss.css">
+
+    <title>Weather Analysis Landing Page</title>
+
+  </head>
+
+<body>
+
+  <!-- Below is a nav bar across the top of the page  -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top navcolor1">
+      <a class="navbar-brand" href="index.html"><h3>Latitude Weather Analysis</h3></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                 <a class="nav-link waves-effect waves-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+                        <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                  <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item waves-effect waves-light" href="latvstemp.html">Max Temperature</a>
+                      <a class="dropdown-item waves-effect waves-light" href="latvshumidity.html">Humidity</a>
+                      <a class="dropdown-item waves-effect waves-light" href="latvscloudiness.html">Cloudiness</a>
+                      <a class="dropdown-item waves-effect waves-light" href="latvswindspeed.html">Wind Speed</a>
+                  </div>
+              </li>  
+            <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light" href="comparisons.html">Comparisons</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light" href="weather_data.html">Data</a>
+              </li>
+  
+          </ul>
+  
+      </div>
+  </nav>
+  
+      <div class="container" style="margin-top:60px;">
+        
+        <div class="row" style="margin-top:10px;">
+            <div class="col-sm-8 col-md-6 col-lg-8">
+              <h5>Summary: Latitude vs. X</h5>
+              <hr>
+              <p>
+                <img src="images/lat_vs_temp.png" class="about_image1" alt="Latitude vs Temperature">
+                The purpose of this project was to analyze the weather as it relates to latitude and determine if the closer you get to the equator is there a more significant relationship. Using Jupyter Notebook, Python, Pandas and the OpenWeatherMap API we retrieved 500+ random latitude and longitude coordinates. Using the Python library, CityPy, we iterated through the latitudes and longitudes to determine the nearest city to those coordinates and extracted historical weather data. To perform the data analysis necessary, we used Pandas and then Matplotlib to generate a series of scatter plots to visually represent the relationship between latitude coordinates and temperature, humidity, cloudiness and wind speed.            
+              </p>
+            </div>
+            <div class="col-sm-4 col-md-6 col-lg-4">
+              <h5>Visualizations</h5>
+              <hr>
+              <p class="text-center mx-auto">
+                  <a href="latvstemp.html"><img class="about_image2 image_reduce" src="images/lat_vs_temp.png" alt="Latitude vs Temperature"></a>
+                  <a href="latvshumidity.html"><img class="about_image2 image_reduce" src="images/lat_vs_humidity.png" alt="Latitude vs Temperature"></a>
+
+                  <a href="latvscloudiness.html"><img class="about_image2 image_reduce" src="images/lat_vs_clouds.png" alt="Latitude vs Temperature"></a>
+
+                  <a href="latvswindspeed.html"><img class="about_image2 image_reduce" src="images/lat_vs_wind.png" alt="Latitude vs Temperature"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+<footer class="main_footer">
+    <div class="container main-footer-container">
+      <h3 class="footfont">Please Share &nbsp;&nbsp;</h3>
+        <!-- share code -->
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_email"></a>
+          </div>
+            <script>
+            var a2a_config = a2a_config || {};
+            a2a_config.onclick = 1;
+            a2a_config.num_services = 4;
+            </script>
+            <script async src="https://static.addtoany.com/menu/page.js"></script>
+            <!-- share code -->
+      </div>
+</footer>
+
+</html>
