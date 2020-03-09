@@ -1,4 +1,4 @@
-## Web-Design-Challenge: A Visualization Dashboard - Weather vs. Latitude
+## Web-Design: A Visualization Dashboard - Weather vs. Latitude
 
 Description: This project creates a visualization dashboard using weather data from a previous assignment where weather data was requested from an API, analyzed, and plotted.
 
